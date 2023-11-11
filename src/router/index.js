@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import EventList from '../views/EventList.vue'
-import EventDetails from '../views/EventDetails.vue'
-import EventCreate from '../views/EventCreate.vue'
-import ErrorDisplay from '../views/ErrorDisplay.vue'
-import About from '../views/About.vue'
+import EventList from '@/views/EventList.vue'
+import EventDetails from '@/views/EventDetails.vue'
+import EventCreate from '@/views/EventCreate.vue'
+import ErrorDisplay from '@/views/ErrorDisplay.vue'
+import About from '@/views/About.vue'
 
 const routes = [
   {
@@ -23,16 +23,16 @@ const routes = [
     component: EventCreate
   },
   {
+    path: '/about',
+    name: 'About',
+    component: About
+  },
+  {
     path: '/error/:error',
     name: 'ErrorDisplay',
     props: true,
     component: ErrorDisplay
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
-  }
+  } 
 ]
 
 const router = createRouter({
