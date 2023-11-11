@@ -32,7 +32,7 @@ const routes = [
     name: 'ErrorDisplay',
     props: true,
     component: ErrorDisplay
-  }
+  } 
 ]
 
 const router = createRouter({
